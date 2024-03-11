@@ -3,6 +3,7 @@ from PIL import Image
 
 
 def ft_load(path: str) -> np.array:
+    """"""
     img = Image.open(path)
     if img.format != 'JPEG' and img.format != 'JPG':
         return np.array(0)

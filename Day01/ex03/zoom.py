@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 
 def main():
+    """"""
     try:
         img = ft_load('animal.jpeg')
         print(img)

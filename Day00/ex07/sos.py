@@ -2,6 +2,7 @@ from sys import argv
 
 
 def main():
+    """"""
     try:
         ERR_MSG = 'The arguments are bad'
         assert len(argv) == 2, ERR_MSG

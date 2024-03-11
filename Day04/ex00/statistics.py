@@ -1,6 +1,7 @@
 
 
 def odd_quartil(effect: float, arr: list[int]):
+    """"""
     if effect % 1 >= 0.75:
         return (arr[int(effect)-1] + arr[int(effect)] * 3)/2
     elif effect % 1 >= 0.5:
@@ -9,6 +10,7 @@ def odd_quartil(effect: float, arr: list[int]):
 
 
 def ft_statistics(*args, **kwargs) -> None:
+    """"""
     arr = [i for i in args]
     len_arr = len(arr)
     sum_arr = sum(arr)
@@ -78,7 +80,7 @@ So, according to the Tukey method, Q1 is 6 and Q3 is 212
         q3 = sort_arr[int(effective2)] if effective2 % 2 == 0 else \
             (sort_arr[int(effective2) - 1] + sort_arr[int(effective2)]) / 2
 
-        # standard deviatino done
+        # standard deviation done
         std = pow(sum(pow(i - mean, 2) for i in arr) / len_arr, 1/2)
         # variance done
         var = sum(pow(i - mean, 2) for i in arr) / len_arr

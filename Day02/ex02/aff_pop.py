@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 from load_csv import load
 
-# TODO __doc__ and the change values from 1.2M, 1.2K to real value
-
 
 def main():
+    """"""
     loaded = load('../population_total.csv')
     maroc = loaded[loaded['country'] == 'Morocco']
     france = loaded[loaded['country'] == 'France']

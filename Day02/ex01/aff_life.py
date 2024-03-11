@@ -3,6 +3,7 @@ from load_csv import load
 
 
 def main():
+    """"""
     loaded = load('../life_expectancy_years.csv')
     df = loaded[loaded['country'] == 'Morocco']
 

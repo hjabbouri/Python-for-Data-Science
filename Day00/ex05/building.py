@@ -1,9 +1,8 @@
 import sys
 
-# TODO: don't forget the __doc__
-
 
 def ispunct(line):
+    """"""
     count = 0
     for c in line:
         if c in '!"#$%&\'()*+, -./:;<=>?@[\\]^_`{|}~':
@@ -12,6 +11,7 @@ def ispunct(line):
 
 
 def main():
+    """"""
     try:
         line = ''
         if len(sys.argv) == 1:
@@ -30,10 +30,6 @@ def main():
                        'space': sum(map(str.isspace, line)),
                        'digit': sum(map(str.isdigit, line)),
                        'punct': sum(map(ispunct, line))}
-                        #    'punct': sum(
-                        #        map(lambda x: x in
-                        #            '!"#$%&\'()*+, -./:;<=>?@[\\]^_`{|}~',
-                        #            line))}
         print(f'The text contains {len(line)} characteres:')
         print(ft_dict['upper'], ' upper letters')
         print(ft_dict['lower'], ' lower letters')

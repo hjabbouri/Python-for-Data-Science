@@ -1,10 +1,9 @@
 from sys import argv
 from ft_filter import ft_filter
 
-# TODO: use __doc__
-
 
 def main():
+    """"""
     try:
         ERR_MSG = 'The arguments are bad'
         assert len(argv) == 3, ERR_MSG

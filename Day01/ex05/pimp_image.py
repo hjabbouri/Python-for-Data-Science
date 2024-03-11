@@ -43,6 +43,7 @@ def ft_blue(array) -> np.array:
 
 
 def ft_grey(array) -> np.array:
+    """"""
     grey = np.dot(array[..., :3], [0.2989, 0.5870, 0.1140])
     Image.fromarray(grey).show(title='Figure VIII.5: Grey')
     return grey
